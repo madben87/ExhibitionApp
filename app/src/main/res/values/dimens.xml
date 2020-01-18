@@ -1,0 +1,5 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="exhibit_image_size">200dp</dimen>
+    <dimen name="exhibit_title_size">16sp</dimen>
+</resources>
