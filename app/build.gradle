@@ -63,5 +63,6 @@ dependencies {
     implementation Dependencies.recyclerview
     implementation Dependencies.material
 
-    //annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation Dependencies.kotlinCoroutines
+    implementation Dependencies.coroutinesAndroid
 }

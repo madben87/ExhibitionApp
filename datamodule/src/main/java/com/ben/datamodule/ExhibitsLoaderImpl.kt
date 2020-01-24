@@ -6,29 +6,20 @@ import com.ben.model.model.Exhibit
 import com.ben.model.model.ExhibitRequest
 import com.google.gson.Gson
 import io.reactivex.Observable
+import kotlinx.coroutines.*
 import org.koin.core.KoinComponent
+import java.util.ArrayList
 import java.util.concurrent.Callable
+import kotlin.coroutines.CoroutineContext
 
 class ExhibitsLoaderImpl(val context: Context) : ExhibitsLoader, KoinComponent {
 
-    override fun getExhibitList(): Observable<List<Exhibit>> {
-        /*var json = ""
+    override fun getExhibitList() : List<Exhibit> {
+        var json = ""
         val dataPath = "data.json"
         context.assets.open(dataPath).bufferedReader().use {
             json = it.readText()
         }
-        val request = Gson().fromJson(json, ExhibitRequest::class.java)*/
-        //return request.list
-
-        return Observable.fromCallable(object : Callable<List<Exhibit>> {
-            override fun call(): List<Exhibit> {
-                var json = ""
-                val dataPath = "data.json"
-                context.assets.open(dataPath).bufferedReader().use {
-                    json = it.readText()
-                }
-                return Gson().fromJson(json, ExhibitRequest::class.java).list
-            }
-        })
+        return Gson().fromJson(json, ExhibitRequest::class.java).list
     }
 }

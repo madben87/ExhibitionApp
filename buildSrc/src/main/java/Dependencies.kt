@@ -19,7 +19,7 @@ object Versions {
     const val rxJava = "2.2.8"
     const val rxAndroid = "2.0.2"
     const val rxKotlin = "2.3.0"
-    const val kotlinCoroutines = "1.2.0-alpha-2"
+    const val kotlinCoroutines = "1.3.0"
 
     const val glide = "4.11.0"
     const val gson = "2.8.5"
@@ -91,10 +91,6 @@ object Dependencies {
 
     const val junitImpl = "junit:junit:${Versions.junitImpl}"
     const val junit = "androidx.test.ext:junit:${Versions.junit}"
-
-    //testImplementation 'junit:junit:4.12'
-    //androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    //androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
 object ProjectProps {

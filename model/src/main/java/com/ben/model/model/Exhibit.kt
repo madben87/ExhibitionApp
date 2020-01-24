@@ -7,5 +7,4 @@ data class Exhibit(
     var title: String,
     @SerializedName("images")
     var images: ArrayList<String>
-) {
-}
+)

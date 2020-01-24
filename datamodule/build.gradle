@@ -49,4 +49,7 @@ dependencies {
     implementation Dependencies.rxKotlin
 
     implementation Dependencies.gson
+
+    implementation Dependencies.kotlinCoroutines
+    implementation Dependencies.coroutinesAndroid
 }
